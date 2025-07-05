@@ -124,6 +124,7 @@ a.logo {
   position: absolute;
   padding-right: 10vw;
   cursor: pointer;
+  z-index: 2;
 }
 
 aside.app {
@@ -156,12 +157,14 @@ ul.list li {
   background-color: var(--that-green);
   border: 2px solid var(--that-green);
   flex-grow: 1;
-  color: white;
   font-size: 23px;
   font-family: "Amiri", serif;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  & a {
+    color: white;
+  }
 }
 
 ul.list li:last-child {
